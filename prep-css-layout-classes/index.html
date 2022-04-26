@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%; /* row takes up entire width of its parent */
+      display: flex; /* row's children will line up */
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="movie poster for Raiders of the Lost Ark">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>
+          Based on the hit ride at Disneyland, <i>Raiders of the Lost Ark</i> is the story of how
+          infamous smuggler and scoundrel Han Solo goes on one last mission for his dastardly
+          employer Jabba the Hutt. He must retrieve and smuggle the Lost Ark back to
+          Tatooine, but he must also change his entire outfit to avoid suspicion on this strange
+          planet.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="movie poster for Temple of Doom">
+        <h3>Temple of Doom</h3>
+        <p>
+          After the runaway success of the sequel to the hit Disneyland ride, George Lucas
+          directed another film in the <i>Indiana Jones</i> saga. This time, Han Solo
+          is tasked with completing a series of action sequences that do not advance the
+          plot at all, but that Imagineers all agreed would make for a thrilling ride.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="movie poster for The Last Crusade">
+        <h3>The Last Crusade</h3>
+        <p>
+          After the Disneyland ride for <i>Temple of Doom</i> was closed down due to
+          a terrible tragedy, George Lucas believed that a new film vaguely related to
+          religious persecution while starring Han Solo would be the film that opened
+          up the possibility of getting the greenlight for his dream project:
+          <br>
+          <em><i>Star Wars: THE RIDE</i></em>
+          <br>
+          (The tragedy was not related to the <i>Temple of Doom</i> ride, but it affected
+          the nation so deeply that nobody could in good conscience continue enjoying
+          what they once did.)
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Complete the HTML here -->
+
+</body>
+</html>
